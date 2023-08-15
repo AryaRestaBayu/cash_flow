@@ -35,6 +35,7 @@ class RecentTransaction extends StatelessWidget {
                                 children: [
                                   CustomListTile(
                                     cashFlow: cashFlow,
+                                    controller: controller,
                                   ),
                                   SizedBox(
                                     width: width,

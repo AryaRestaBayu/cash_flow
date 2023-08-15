@@ -4,15 +4,17 @@ class CustomListTile extends StatelessWidget {
   const CustomListTile({
     super.key,
     required this.cashFlow,
+    required this.controller,
   });
 
   final MapEntry<int, CashFlow> cashFlow;
+  final HomePageController controller;
 
   @override
   Widget build(BuildContext context) {
     final double width = Get.width;
     final double height = Get.height;
-    final nominal = NumberFormat('#,###.###').format(cashFlow.value.nominal);
+    final nominal = controller.changeFormat(cashFlow.value.nominal);
     return Container(
       width: width,
       height: height * .08,
