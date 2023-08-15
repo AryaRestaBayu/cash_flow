@@ -19,7 +19,7 @@ App to manage cash flow.
 https://youtube.com/shorts/hUq--pRpSgM?feature=share
 
 ## What i use
-- Http request local api
+- Http request local api https://github.com/AryaRestaBayu/cash_flow-backend
 - Local storage (flutter_secure_storage)
 - Lottie animation
 - MVC architecture with modularization
